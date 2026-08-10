@@ -11,7 +11,7 @@ individual data files.
 ## Development Setup
 
 ```bash
-# Using mise (recommended) - installs Python versions 3.8-3.14
+# Using mise (recommended) - installs Python versions 3.8-3.15
 mise install
 
 # Create virtual environment and install in editable mode
@@ -53,7 +53,7 @@ The project uses `run-tests.sh` for all quality checks. Run all checks with:
 ### Using tox for Multi-Python Testing
 
 ```bash
-tox           # Run tests across all Python versions (3.8-3.14)
+tox           # Run tests across all Python versions (3.8-3.15)
 tox -e py312  # Run tests for specific Python version
 ```
 
@@ -107,7 +107,7 @@ When modifying files in this repository:
 
 1. **Update copyright years**: If a file has a copyright header, add the current
    year to the list if not already present (e.g.
-   `Copyright (C) 2019, 2020, 2021, 2023, 2025 CERN.`)
+   `Copyright (C) 2019, 2020, 2021, 2023, 2025, 2026 CERN.`)
 
 2. **Python files** (`.py`): Run `./run-tests.sh --format-black` to check
    formatting, and `./run-tests.sh --lint-flake8` and
@@ -144,5 +144,5 @@ When modifying files in this repository:
 ## Key Notes
 
 - License: GPLv3
-- Python support: 3.8 - 3.14
+- Python support: 3.8 - 3.15
 - Main branch: `master`
